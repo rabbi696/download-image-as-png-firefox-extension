@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Download as PNG",
+  "version": "1.1",
+  "description": "Download any image as a PNG file.",
+  "permissions": [
+    "contextMenus",
+    "downloads",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "download-image-as-png@example.com"
+    }
+  }
+}
